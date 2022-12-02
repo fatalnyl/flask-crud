@@ -5,19 +5,38 @@
 
 {% block body %}
 
-<div class="bg-cyan-300 p-5 flex flex-col gap-1">
-        <div class="flex flex-row justify-between p-5 bg-red-300">
-            <div class="">
-                <h2>Test</h2>
-            </div>
-            <div class="float-right">
-                <button class="rounded-full w-44 h-10  bg-green-400">
-                    <h2>Yes</h2>
-                </button>
-            </div>
-        </div>
-        <div class="flex flex-row bg-green-300">
-            Test
-        </div>
+<div class="container mx-auto">
+  <div class="bg-slate-600 p-5 flex flex-col gap-1">
+          <div class="flex flex-row justify-between pb-3">
+              <div class="float-left">
+                  <h2 class="text-white">Manage User</h2>
+              </div>
+              <div class="float-right">
+                  <button class="rounded-full p-2 bg-green-600 hover:bg-green-400">
+                      <h3 class="text-white">Add New User</h3>
+                  </button>
+              </div>
+          </div>
+        <table class="table-fixed shadow-sm bg-slate-900 text-slate-100">
+          <tr>
+            <th class="p-3 border border-slate-300">ID</th>
+            <th class=" p-3 border border-slate-300">Name</th>
+            <th class=" p-3 border border-slate-300">Email</th>
+            <th class=" p-3 border border-slate-300">Phone</th>
+            <th class=" p-3 border border-slate-300">Action</th>
+          </tr>
+  
+          <tr>
+            <td>01</td>
+            <td>Meow</td>
+            <td>meow@gmail.com</td>
+            <td>019221222</td>
+            <td>
+              <a href=""></a>
+            </td>
+          </tr>
+        </table>
+  </div>
+
 </div>
 {% endblock %}
